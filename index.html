@@ -25,7 +25,7 @@
   
   
 </head>
-<body>
+<body onload = $('#popupsurvey').modal('show');>
 
 <!-- Google Analytics -->
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,6 +39,28 @@
 </script>
 <!-- /Google Analytics -->
 
+
+<!-- Popup Facebook -->
+<div id="popupsurvey" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Amputee Survey</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>If you are an amputee are you willing to take a survey?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0Eh0iA91aNVtvSg9P0FwtBRH1HozGO_g7O3neY0NpvTqQ9w/viewform?c=0&w=1')" data-dismiss="modal">Yes</button> 
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Popup Facebook -->
 
   <section class="menu cid-qMkZhwtJv9" once="menu" id="menu1-e">
 
